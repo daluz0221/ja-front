@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+:root{
+    --morado-dark: #170312;
+    --morado-edio: #33032d;
+    --morado-light: #531252;
+    --gray-light: #eaeaea;
+    --gold-dark: #E48A1D;
+    --gold-medium: #E8B06B;
+    --gold-light: #FFCD8F;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+a{
+    text-decoration: none;
+}
+
+
+/* 
+================= HEADER ===================
+*/
+
+.header{
+    width: 100%;
+    height: 100vh;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.70)), url("../img/anillo-shine.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.header .text{
+    width: 100%;
+    height: 100vh;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold-dark);
+}
+
+/* 
+================= NAVBAR ===================
+*/
+
+.navbar{
+    background: var(--gold-medium);
+    height: 4rem;
+}
+
+.navbar .nav-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .nav-icons .icon{
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.navbar .nav-icons i{
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.navbar-desktop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: var(--gold-medium);
+    transition: all .7s ease-in;
+}
+
+.navbar-desktop.active{
+    left: 0;
+}
+
+.navbar-desktop .nav-close{
+    padding: 1.5rem 2rem 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-desktop .nav-close i{
+    color: #fff;
+    font-size: 3rem;
+}
+
+
+.navbar-desktop .nav-options{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-options .nav-item{
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-options .nav-item a,
+.nav-options .nav-item span
+{
+    color: var(--gray-light);
+    font-size: 3.5rem;
+    width: 4rem;
+}
+
+.nav-options .nav-item .submenu-home{
+    position: relative;
+    left: -100%;
+    transition: all .5s ease-out;
+    height: 0;
+}
+
+.nav-options .nav-item .submenu-home.active{
+    position: relative;
+    left: 0%;
+    background: var(--gold-light);
+    width: 100%;
+    padding: 1rem 0;
+    height: auto;
+}
+
+.nav-options .nav-item .submenu-home ul{
+    list-style: none;
+}
+
+.nav-options .nav-item .submenu-home a{
+    font-size: 2.6rem;
+}
+
+.nav-options .nav-item .submenu-home .tienda li{
+    padding: 1rem 0;
+}
