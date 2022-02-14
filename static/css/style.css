@@ -63,21 +63,24 @@ a{
 ================= NAVBAR ===================
 */
 
-.navbar{
+.navbar1{
     background: var(--gold-medium);
     height: 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.navbar .nav-icons{
+.navbar1 .nav-icons{
     display: flex;
     justify-content: space-between;
 }
 
-.navbar .nav-icons .icon{
+.navbar1 .nav-icons .icon{
     padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
-.navbar .nav-icons i{
+.navbar1 .nav-icons i{
     font-size: 1.7rem;
     color: #fff;
 }
@@ -158,3 +161,147 @@ a{
 .nav-options .nav-item .submenu-home .tienda li{
     padding: 1rem 0;
 }
+
+/* 
+================ Productos destacados ======================
+*/
+
+.container{
+    margin-top: 8rem;
+}
+
+.subtitle{
+    font-size: 1.7rem;
+    color: var(--gold-dark);
+    font-weight: 700;
+    z-index: 100;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    height: auto;
+}
+
+.subtitle span{
+    background: var(--gray-light);
+    padding: 0 1.2rem;
+    z-index: 200;
+    position: relative;
+}
+
+
+.subtitle::after{
+    content:"";
+    display: inline-block;
+    height: .2rem;
+    width:100%;
+    background: var(--gold-dark);
+    position: relative;
+    top: -2.4rem;
+    z-index: 1;
+}
+
+
+.prod-destacados{
+    background: var(--gray-light);
+    padding: 2rem;
+    margin: 5rem 1rem;
+}
+
+.prod-destacados .title{
+    width: 100%;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.prod-destacados  .content{
+    font-size: 1.7rem;
+}
+
+.prod-destacados .producto{
+    position: relative;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.prod-destacados .producto img{
+    border-radius: .5rem;
+}
+
+.prod-destacados .overlay{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--gold-light);
+    overflow: hidden;
+    transition: .7s ease;
+}
+
+.prod-destacados .producto:hover .overlay{
+    width: 100%;
+    opacity: .8;
+}
+
+.prod-destacados .producto .overlay-texto{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    white-space: nowrap;
+    color: var(--morado-dark);
+    font-size: 1.5rem;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-top: 1px solid var(--morado-light);
+    border-bottom: 1px solid var(--morado-light);
+}
+
+.prod-destacados .btn-producto{
+    margin-top: 1rem;
+    background: var(--morado-light);
+    color: #fff;
+    padding: .7rem 1.7rem;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    border: 2px solid transparent;
+    transition: .3 ease;
+}
+
+.prod-destacados .btn-producto:hover{
+    background: transparent;
+    border: 2px solid var(--morado-light);
+    color: var(--morado-dark);
+}
+
+/* 
+================ SEPARADOR ======================
+*/
+
+.separador{
+    width: 100%;
+    height: 20rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.70)), url('/static/img/fondo-mejor.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 5rem;
+}
+
+.separador p{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.acerca-de{
+    margin-bottom: 5rem;
+}
+
+/* 
+================ GALERIA ======================
+*/
