@@ -7,6 +7,8 @@ const submenu_home = document.getElementById('submenu-home');
 const tienda_options = document.getElementById('tienda-options');
 const submenu_tienda = document.getElementById('submenu-tienda');
 
+
+
 icon_bar.addEventListener('click', ()=>{
     nav_desktop.classList.add('active');
 });
@@ -21,4 +23,30 @@ home_options.addEventListener('click', ()=>{
 
 tienda_options.addEventListener('click', ()=>{
     submenu_tienda.classList.toggle('active');
+});
+
+window.addEventListener('load', function(){
+
+    let img = [];
+
+    img[0] = './static/img/joyerías.jpg';
+    img[1] = './static/img/precintos-joyeria.jpg';
+    img[2] = './static/img/lindo-anisho.jpg';
+    img[3] = './static/img/otra-galeria.jfif';
+
+    let indiceImagenes = 0
+    
+    function cambarimg() {
+        
+        document.slider.src = img[indiceImagenes];
+
+        if (indiceImagenes < 3) {
+            indiceImagenes++;
+        }
+        else{
+            indiceImagenes = 0
+        }
+    }
+
+    setInterval(cambarimg, 4000)
 });

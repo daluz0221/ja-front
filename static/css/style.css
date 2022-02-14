@@ -305,3 +305,38 @@ a{
 /* 
 ================ GALERIA ======================
 */
+
+.galeria{
+    margin-bottom: 5rem;
+}
+
+/* 
+================ FOOTER ======================
+*/
+
+footer{
+    background: var(--morado-dark);
+    color: #fff;
+    padding: 3rem .5rem;
+}
+
+footer h3{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+footer ul{
+    margin-left: 3rem;
+    font-size: 1.5rem;
+}
+
+footer li{
+    margin-top: .7rem;
+}
+
+footer ul a{
+    color: #fff;
+}
+
+
+
