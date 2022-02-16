@@ -310,6 +310,15 @@ a{
     margin-bottom: 5rem;
 }
 
+.wrapper{
+    width: 100%;
+}
+
+.wrapper .carousel{
+    max-width: 100%;
+    
+}
+
 /* 
 ================ FOOTER ======================
 */
@@ -328,6 +337,7 @@ footer h3{
 footer ul{
     margin-left: 3rem;
     font-size: 1.5rem;
+    list-style: none;
 }
 
 footer li{

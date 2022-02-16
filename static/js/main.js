@@ -27,26 +27,28 @@ tienda_options.addEventListener('click', ()=>{
 
 window.addEventListener('load', function(){
 
-    let img = [];
+    // let img = [];
 
-    img[0] = './static/img/joyerías.jpg';
-    img[1] = './static/img/precintos-joyeria.jpg';
-    img[2] = './static/img/lindo-anisho.jpg';
-    img[3] = './static/img/otra-galeria.jfif';
+    // img[0] = './static/img/joyerías.jpg';
+    // img[1] = './static/img/precintos-joyeria.jpg';
+    // img[2] = './static/img/lindo-anisho.jpg';
+    // img[3] = './static/img/otra-galeria.jfif';
 
-    let indiceImagenes = 0
+    // let indiceImagenes = 0
     
-    function cambarimg() {
+    // function cambarimg() {
         
-        document.slider.src = img[indiceImagenes];
+    //     document.slider.src = img[indiceImagenes];
 
-        if (indiceImagenes < 3) {
-            indiceImagenes++;
-        }
-        else{
-            indiceImagenes = 0
-        }
-    }
+    //     if (indiceImagenes < 3) {
+    //         indiceImagenes++;
+    //     }
+    //     else{
+    //         indiceImagenes = 0
+    //     }
+    // }
 
-    setInterval(cambarimg, 4000)
+    // setInterval(cambarimg, 4000)
+
+    
 });
